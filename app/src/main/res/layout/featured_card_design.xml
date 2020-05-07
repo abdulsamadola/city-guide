@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    android:layout_marginEnd="5dp"
+    app:cardElevation="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="8dp"
+        android:paddingTop="2dp"
+        >
+
+        <ImageView
+            android:id="@+id/fc_img"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/elegant_icon"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/fc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:fontFamily="@font/gravitas_one"
+            android:textSize="17sp"
+            android:text="Elegant" />
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="4.5"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            />
+        <TextView
+            android:id="@+id/fc_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/slider_desc_2"
+            android:layout_marginBottom="10dp"
+            />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
