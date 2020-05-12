@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 
 import com.campstore.cityguide.model.Category;
@@ -123,5 +125,9 @@ public class Dasboard extends AppCompatActivity {
 
         featureRecycler.setAdapter(featuredLocationAdapter);
 
+    }
+
+    public void openDrawer(View view) {
+        startActivity(new Intent(Dasboard.this, OrderActivity.class));
     }
 }
